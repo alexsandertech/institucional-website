@@ -1,0 +1,204 @@
+@import 'style.css';
+
+@media only screen and (max-width: 1000px) {
+    
+    .bgRight{
+        display: none;
+    }    
+    .bgLeft{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-left: 10px;
+    }
+        .bgLeft header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .home-text{
+            margin:auto;
+        }
+    .menuBurgerMobile{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+        .line{
+            top: 15px;
+            position: relative;
+            width: 35px;
+            height: 1px;
+            background-color: var(--main-colorful-dark);
+            transition: 0.2s ease-in-out;
+        }
+            .line::after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: '';
+                top: 10px;
+                display: block;
+                background-color: var(--main-colorful-dark);
+                transition: 0.2s ease-in-out;
+            }
+            #menuM:checked ~ label .line {
+                transform: rotate(-45deg);
+                top: 20px;
+            }
+            #menuM:checked ~ label .line:after  {
+                transform: rotate(90deg);
+                top: 0;
+            }
+            #menuM{
+                display: none;
+            }
+    .itemsMenuBar{
+        display: none;
+        height: 90%;
+    }
+        .itemsMenuBar ul{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        .itemsMenuBar li{
+            flex: 1;
+            list-style: none;
+        }
+        .itemsMenuBar a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: var(--main-colorful-dark);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    
+    .about-title h2{
+        font-size: 35px;
+    }
+    .about-title h3{
+        font-size: 25px;
+    }
+    .apresentation p{
+        font-size: 18px;
+    }
+    #text-aboutBtn{
+        font-size: 15px;
+    }
+
+    .container-services{
+        height: 100%;
+    }
+    .section-title h2{
+        font-size: 35px;
+    }
+        .itemsServices{
+            margin: auto;
+            grid-gap: 10px;
+        }
+        .nameService{
+            font-size: 15px;
+        }
+        .topicService{
+            font-size: 13px;
+        }
+
+
+    .leftContact{
+        display: none;
+    }
+    .rightContact{
+        width: 80vw;
+        margin:auto;
+        margin-left:80px;
+    }
+    .infoFooter p{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+    .home-text h1{
+        font-size: 35px;
+    }
+    .about-title h2{
+        font-size: 30px;
+    }
+    .apresentation br{
+        display: none;
+    }
+    .rightContact{
+        margin-left:10px;
+    }
+        .about-btnContact{
+            width: 350px;
+        }
+        #text-aboutBtn{
+            font-size: 13px;
+        }
+    .itemsServices{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #clients{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .companyClients{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #text-contactBtn{
+        font-size: 15px;
+    }
+    .infoFooter p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 349px){
+    .logo-img{
+        width: 150px;
+    }
+    .home-text h1{
+        font-size: 24px;
+    }
+    .about-title h2{
+        font-size: 24px;
+
+    }
+    .about-btnContact{
+        width: 280px;
+        margin-top:5px;
+        text-align: center;
+    }
+    .about-btnContact:hover{
+        background-color: var(--main-colorful-light);
+    }
+    .section-title h2{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .iconService img{
+        max-width: 30px;
+        max-height:30px;
+    }
+    .nameService{
+        margin-top:10px;
+    }
+    .infoFooter p{
+        font-size: 10px;
+    }
+}
