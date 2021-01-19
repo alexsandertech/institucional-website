@@ -14,6 +14,7 @@ body{
     --main-colorless-dark-1: #202020;
     --main-colorless-dark-2: #151515;
 
+    scroll-behavior: smooth;
 }
 .container{
     width: 90vw;
@@ -224,7 +225,7 @@ body{
             font-weight: 200;
         }
             .about-btnContact a:hover #text-aboutBtn{
-                background-color: var(--main-colorful-light);
+                background-color: #1b506b;
                 font-weight: 200;
                 color: var(--main-colorless-light-2);
                 transition: ease-out .5s;

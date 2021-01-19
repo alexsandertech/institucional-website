@@ -1,12 +1,3 @@
-/*jQuery rolagem suave da página */
-var $doc = $('html, body');
-$(".softScroll").click(function() {
-    $doc.animate({
-        scrollTop: $( $.attr(this, "href") ).offset().top
-    }, 700);
-    return false;
-});
-
 function setMenuStateMobile(){
     if(window.innerWidth<=1000){
         if(document.getElementById('menuM').checked == false){
